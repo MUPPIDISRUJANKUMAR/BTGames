@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <header>
+      <h2>Rock Paper Scissors</h2>
+    </header>
+    <div class="container">
+      <div class="details">
+        <p>This is virtual rock paper scissors game</p>
+        <p>
+          Please slelect any of one image below to start the game and see your
+          score
+        </p>
+      </div>
+      <div class="score">
+        <div class="won">Win : 0  | </div>
+        <div class="lost">Lost : 0  | </div>
+        <div class="draw">Draw : 0 </div>
+      </div> 
+      <div class="resultbox">
+      </div>
+      <div class="game-container">
+        <div class="game-images-container">
+          <!-- User Choices Section -->
+          <div class="game-images">
+            <p class="heading">Your Choices</p>
+            <div class="choices">
+              <div class="rock img">
+                <img
+                  src="images/rock.jpg"
+                  alt="rock image"
+                  data-choice="rock"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="paper img">
+                <img
+                  src="images/paper.jpg"
+                  alt="paper image"
+                  data-choice="paper"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="scissors img">
+                <img
+                  src="images/scissors.jpg"
+                  alt="scissors image"
+                  data-choice="scissors"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </div>
+          </div>
+      
+          <!-- Computer Choice Section -->
+          <div class="computer-choice">
+            <p class="heading">Computer Choice</p>
+            <div class="computer-selection"></div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
