@@ -21,7 +21,7 @@
 
 /* Content */
 .content {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .content h2 {
@@ -40,7 +40,7 @@
 
 .game-cards {
   display: flex;
-  margin: 4% 1% 4% 1%;
+  margin: 6% 1% 6% 1%;
   width: 100%;
   gap: 30px;
 }
