@@ -57,3 +57,20 @@
   font-size: 24px;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  .full-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-container {
+    width: 100%;
+  }
+  .main-container {
+    width: 100%;
+  }
+  .game-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
