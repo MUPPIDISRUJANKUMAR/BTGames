@@ -14,6 +14,14 @@
 body {
   text-align: center;
   background-color: #011f3f;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #title {
@@ -38,16 +46,27 @@ body {
 }
 
 .container {
-  display: block;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
   margin: auto;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
 }
 
 .btn {
   margin-top: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  width: 45vw; /* Make buttons scale dynamically */
+  height: 45vw;
+  max-width: 150px; /* Limit max size */
+  max-height: 150px;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -76,4 +95,18 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+@media (max-width: 600px) {
+  #title {
+    font-size: 4rem;
+  }
+  #level-title {
+    font-size: 2rem;
+  }
+  .st-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
