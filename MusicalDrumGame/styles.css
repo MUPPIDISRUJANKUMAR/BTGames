@@ -96,3 +96,9 @@ h1 {
   margin: 10px;
   background-color: white;
 }
+
+@media screen and(max-width: 600px) {
+  .info {
+    font-size: 20px;
+  }
+}

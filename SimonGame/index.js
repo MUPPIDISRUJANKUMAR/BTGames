@@ -49,7 +49,8 @@ function checkAnswer(currentLevel) {
   } else {
     started = false;
     makeSound("wrong");
-    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("#level-title").text("Game Over,Your Score: " + level);
+    $(".st-btn").text("Restart");
     $("body").addClass("red");
     setTimeout(function () {
       $("body").removeClass("red");
@@ -58,12 +59,16 @@ function checkAnswer(currentLevel) {
   }
 }
 
-$(document).keydown(function () {
+$(".st-btn").click(function () {
   if (!started) {
     $("#level-title").text("level " + level);
     nextSequence();
     started = true;
   }
+  $(".st-btn").addClass("pressed");
+  setTimeout(function () {
+    $(".st-btn").removeClass("pressed");
+  }, 100);
 });
 
 $(".btn").click(function () {

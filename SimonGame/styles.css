@@ -1,24 +1,50 @@
-body {
-  text-align: center;
-  background-color: #011F3F;
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.boldonse-regular {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+body {
+  text-align: center;
+  background-color: #011f3f;
+}
+
+#title {
+  font-size: 5rem;
+  margin-top: 0%;
+  color: #fef2bf;
+}
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  color: #fef2bf;
+  text-align: center;
+}
+.st-btn {
+  width: 150px;
+  height: 50px;
+  background-color: aquamarine;
+  color: rgb(237, 13, 9);
+  border-radius: 0.75rem;
+  font-size: 20px;
+  box-shadow: 0 0 6px aliceblue;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
-  margin: 25px;
+  margin-top: 25px;
   display: inline-block;
   height: 200px;
   width: 200px;
